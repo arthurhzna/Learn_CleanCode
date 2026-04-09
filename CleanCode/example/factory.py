@@ -5,14 +5,6 @@ from abc import ABC, abstractmethod
 # 1. Abstract Base Class
 # ======================
 class Food(ABC):
-    factory = None  # akan di-set dari luar
-
-    @classmethod
-    def create(cls, name: str):
-        if cls.factory is None:
-            raise RuntimeError("Factory belum diset")
-        return cls.factory.make_food(name)
-
     @abstractmethod
     def eat(self) -> str:
         pass
@@ -62,20 +54,27 @@ factory.register("burger", Burger)
 factory.register("pizza", Pizza)
 factory.register("krabby", KrabbyPatty)
 
-Food.factory = factory
-
 
 # ======================
 # 5. Usage
 # ======================
 def main():
-    food1 = Food.create("burger")
-    food2 = Food.create("pizza")
-    food3 = Food.create("krabby")
+    # food1 = factory.make_food("burger")
+    # food2 = factory.make_food("pizza")
+    # food3 = factory.make_food("krabby")
 
-    print(food1.eat())
-    print(food2.eat())
-    print(food3.eat())
+    # print(food1.eat())
+    # print(food2.eat())
+    # print(food3.eat())
+
+menu = ["burger", "pizza", "krabby"]
+
+foods = []
+for name in menu:
+    foods.append(factory.make_food(name))
+
+for food in foods:
+    print(food.eat())
 
 
 if __name__ == "__main__":
