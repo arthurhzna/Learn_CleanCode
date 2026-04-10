@@ -1,5 +1,7 @@
 # Clean Code 📘
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d682b9e7-5a08-45be-8556-1f68019c251b" width="150"/>
+</p>
 ## 🧠 Philosophy
 
 > "Programs must be written for people to read, and only incidentally for machines to execute."  
