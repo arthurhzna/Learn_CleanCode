@@ -1,3 +1,10 @@
+Factory = "how to create objects"
+DI      = "how to provide objects to classes"
+
+❌ Factory only → still has dependency
+✅ DI only → clean but limited for complex creation
+🔥 Factory + DI → best practice (used in production)
+
 # =============================================================================================================================================================================================================================================================
 
 """
