@@ -1,67 +1,76 @@
-# Clean Code 📘
+# Clean Architecture 📘
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d682b9e7-5a08-45be-8556-1f68019c251b" width="150"/>
+  <img src="https://github.com/user-attachments/assets/baa4a05a-1bac-447b-9737-2ec53bee7d0e" width="150"/>
 </p>
 
 ## 🧠 Philosophy
 
-> "Programs must be written for people to read, and only incidentally for machines to execute."  
-> — Harold Abelson  
+> "The architecture of a system should be independent of external elements."  
 
-> "Complexity kills. It sucks the life out of developers, it makes products difficult to plan, build, and test."  
-> — Ray Ozzie  
+> "Good architecture allows the system to evolve without rewriting its core."  
 
 ---
 
 ## ⚡ Mindset
 
-> "Clean code always looks like it was written by someone who cares."  
-> — Robert C. Martin  
+> "Separate what changes from what stays stable."  
 
-> "Messy code is a sign of careless thinking."  
-> — Robert C. Martin  
+> "Core logic should not depend on external details."  
 
-> "Leave the campground cleaner than you found it."  
-> — Robert C. Martin  
+> "Tools and technologies are replaceable."  
 
 ---
 
 ## 🛠 Principles
 
-> "Clean code is code that is easy to understand and easy to change."  
-> — Robert C. Martin  
+> "Keep the core independent from outer layers."  
 
-> "If you have to spend effort to understand it, then it is not clean code."  
-> — Robert C. Martin  
+> "Use abstractions to control dependencies."  
+
+> "Details should depend on policies, not the other way around."  
 
 ---
 
 ## 🚀 Workflow
 
-> "First make it work, then make it right, then make it fast."  
-> — Kent Beck
+> "Start from the core, then connect external parts."  
+
+> "Focus on behavior first, implementation later."  
+
+---
+
+## 🧩 Structure
+
+- **Core Logic**  
+  The most stable part of the system, containing essential rules and behavior  
+
+- **Application Layer**  
+  Coordinates how the core logic is used  
+
+- **Adapters / Interfaces**  
+  Translates data between the core and the outside world  
+
+- **External Elements**  
+  Tools, frameworks, devices, or any external systems  
+
 ---
 
 ## 🎯 Purpose
 
-- To understand how to write code that is easier to read  
-- To improve the way I structure and organize code  
-- To document my learning process over time  
-- To build better coding habits  
+- To create systems that are easy to maintain  
+- To reduce dependency on external tools and technologies  
+- To make core logic reusable across different environments  
+- To improve scalability and testability  
 
 ---
 
 ## 🚀 Why This Matters
 
-Code is not only for machines, but also for humans.
+A good architecture allows you to:
 
-Good code makes it easier to:
-- Read and understand later  
-- Work with other developers  
-- Fix bugs and make changes  
+- Change external components without affecting core logic  
+- Adapt to new technologies with minimal changes  
+- Test core behavior independently  
+- Build systems that are stable and long-lasting  
 
 ---
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f8f08cba-4a3e-4b8f-81a0-75f6a98d47ac" width="700"/>
-</p>
-
